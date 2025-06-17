@@ -4,7 +4,11 @@
     --tipo-display-padrao: flex;
     --display-prop-principal: center;
     --fontePrincipal: "Raleway", sans-serif;
-
+    --cor-primaria: #33A8DB;
+    --cor-neutra: #FFF;
+    --gradiente-primario: linear-gradient(182deg,rgba(51, 168, 219, 1) 0%, rgba(20, 114, 183, 1) 100%);
+    --gradiente-secundario: linear-gradient(182deg,rgba(51, 168, 219, 1) 0%, rgba(21, 114, 183, 1) 100%);
+    --gradiente-terciario: linear-gradient(183deg,rgba(0, 0, 0, 1) 0%, rgba(49, 168, 221, 1) 100%);
 }
 
 body{
@@ -15,15 +19,52 @@ body{
 
 .banner{
     display: var(--tipo-display-padrao);
-    border: 1px solid red;
+    border-bottom: 2px solid var(--cor-primaria);
     justify-content: var(--display-prop-principal);
     align-items: var(--display-prop-principal);
+    padding: 56px 465px 156px 465px;
+    background: url('../assets/images/banner.png'),linear-gradient(183deg,rgba(0, 0, 0, 1) 0%, rgba(9, 27, 35, 1) 27%, rgba(9, 27, 35, 1) 69%, rgba(0, 0, 0, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
     .banner-content{
-        border: 1px solid blue;
         display: var(--tipo-display-padrao);
         justify-content: var(--display-prop-principal);
         align-items: var(--display-prop-principal);
         flex-direction: column;
+        gap: 20px;
+        .logo{
+            border-radius: 340px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.15);
+        }
+        .banner-content-title{
+            font-size: 40px;
+            font-weight: 900;
+            background: #33A8DB;
+            background: var(--gradiente-primario);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .banner-content-text{
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--cor-neutra);
+            line-height: 24px;
+        }
+        .banner-content-btn{
+            font-size: 16px;
+            font-weight: 900;
+            color: var(--cor-primaria);
+            text-transform: uppercase;
+            letter-spacing: 21%;
+            padding: 19px 91px;
+            background: transparent;
+            border: 3px solid transparent;
+            border-image: var(--gradiente-secundario) 1;
+        }
     }
 }
 
