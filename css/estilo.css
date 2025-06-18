@@ -64,6 +64,11 @@ body{
             background: transparent;
             border: 3px solid transparent;
             border-image: var(--gradiente-secundario) 1;
+            cursor: pointer;
+            &:hover{
+                transition: .4s ease-in-out;
+                background-color: rgba(51, 168, 219, .15);
+            }
         }
     }
 }
