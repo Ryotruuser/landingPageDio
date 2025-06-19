@@ -6,6 +6,7 @@
     --fontePrincipal: "Raleway", sans-serif;
     --cor-primaria: #33A8DB;
     --cor-neutra: #FFF;
+    --bg-preto: #000;
     --gradiente-primario: linear-gradient(182deg,rgba(51, 168, 219, 1) 0%, rgba(20, 114, 183, 1) 100%);
     --gradiente-secundario: linear-gradient(182deg,rgba(51, 168, 219, 1) 0%, rgba(21, 114, 183, 1) 100%);
     --gradiente-terciario: linear-gradient(183deg,rgba(0, 0, 0, 1) 0%, rgba(49, 168, 221, 1) 100%);
@@ -13,6 +14,8 @@
 
 body{
     font-family: var(--fontePrincipal);
+    background-color: var(--bg-preto);
+    color: var(--cor-neutra);
 }
 
 /* header */
