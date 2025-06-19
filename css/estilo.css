@@ -7,6 +7,7 @@
     --cor-primaria: #33A8DB;
     --cor-neutra: #FFF;
     --bg-preto: #000;
+    --bg-cinza: #252525;
     --gradiente-primario: linear-gradient(182deg,rgba(51, 168, 219, 1) 0%, rgba(20, 114, 183, 1) 100%);
     --gradiente-secundario: linear-gradient(182deg,rgba(51, 168, 219, 1) 0%, rgba(21, 114, 183, 1) 100%);
     --gradiente-terciario: linear-gradient(183deg,rgba(0, 0, 0, 1) 0%, rgba(49, 168, 221, 1) 100%);
@@ -19,7 +20,6 @@ body{
 }
 
 /* header */
-
 .banner{
     display: var(--tipo-display-padrao);
     border-bottom: 2px solid var(--cor-primaria);
@@ -75,19 +75,62 @@ body{
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* header */
+
+/* section-course-content */
+#course-content{
+    border-bottom: 2px solid var(--cor-primaria);
+    padding: 64px 318px 144px 318px;
+    display: var(--tipo-display-padrao);
+    flex-direction: column;
+    justify-content: var(--display-prop-principal);
+    align-items: var(--display-prop-principal);
+    .frame-content{
+        width: 792px;
+        display: var(--tipo-display-padrao);
+        flex-direction: column;
+        justify-content: var(--display-prop-principal);
+        align-items: var(--display-prop-principal);
+        gap: 24px;
+        .course-content-title{
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 19%;
+        text-transform: uppercase;
+        color: var(--cor-primaria);
+        }
+        .course-content-text{
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .modules-list{
+            display: var(--tipo-display-padrao);
+            flex-direction: column;
+            justify-content: var(--display-prop-principal);
+            align-items: var(--display-prop-principal);
+            gap: 24px;
+            .module{
+                display: var(--tipo-display-padrao);
+                justify-content: var(--display-prop-principal);
+                align-items: var(--display-prop-principal);
+                gap: 5px;
+                width: 535px;
+                height: 51px;
+                background-color: var(--bg-cinza);
+                color: var(--cor-neutra);
+                font-size: 16px;
+                border-radius: 57px;
+                border: 1px solid var(--cor-primaria);
+                cursor: pointer;
+                .module-span{
+                    color: var(--cor-primaria);
+                }
+            }
+
+        }
+    }
+    
+}
+
+/* section-course-content */
