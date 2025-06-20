@@ -19,7 +19,6 @@ body{
     color: var(--cor-neutra);
 }
 
-/* header */
 .banner{
     display: var(--tipo-display-padrao);
     border-bottom: 2px solid var(--cor-primaria);
@@ -75,9 +74,7 @@ body{
         }
     }
 }
-/* header */
 
-/* section-course-content */
 #course-content{
     border-bottom: 2px solid var(--cor-primaria);
     padding: 64px 318px 144px 318px;
@@ -133,9 +130,6 @@ body{
     
 }
 
-/* section-course-content */
-
-/* section-transform-world */
 #transform-world{
     height: 363px;
     border-bottom: 2px solid var(--cor-primaria);
@@ -155,13 +149,26 @@ body{
     }
 }
 
-
-
-
-
-
-
-
-
-
-/* section-transform-world */
+#professional-challenges{
+    display: var(--tipo-display-padrao);
+    align-items: var(--display-prop-principal);
+    justify-content: var(--display-prop-principal);
+    flex-direction: column;
+    border-bottom: 2px solid var(--cor-primaria);
+    padding: 76px 347px;
+    .professional-challenges-title{
+        color: var(--cor-primaria);
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 19%;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .professional-challenges-text{
+        color: var(--cor-neutra);
+        font-size: 16px;
+        text-align: center;
+        width: 792px;
+        line-height: 22px;
+    }
+}
