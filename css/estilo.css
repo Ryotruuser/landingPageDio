@@ -134,3 +134,34 @@ body{
 }
 
 /* section-course-content */
+
+/* section-transform-world */
+#transform-world{
+    height: 363px;
+    border-bottom: 2px solid var(--cor-primaria);
+    display: var(--tipo-display-padrao);
+    align-items: center;
+    background-image: url(../assets/images/woman-code.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    .transform-world-text{
+        font-size: 40px;
+        font-weight: 900;
+        text-transform: lowercase;
+        text-shadow: 3px 2px var(--cor-primaria);
+        margin-left: 10%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* section-transform-world */
