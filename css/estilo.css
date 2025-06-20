@@ -28,7 +28,7 @@ body{
     padding: 56px 465px 156px 465px;
     background: url('../assets/images/banner.png'),linear-gradient(183deg,rgba(0, 0, 0, 1) 0%, rgba(9, 27, 35, 1) 27%, rgba(9, 27, 35, 1) 69%, rgba(0, 0, 0, 1) 100%);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     color: white;
     .banner-content{
         display: var(--tipo-display-padrao);
@@ -56,6 +56,8 @@ body{
             font-weight: 400;
             color: var(--cor-neutra);
             line-height: 24px;
+            text-align: center;
+            width: 550px;
         }
         .banner-content-btn{
             font-size: 16px;
