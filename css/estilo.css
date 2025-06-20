@@ -8,6 +8,7 @@
     --cor-neutra: #FFF;
     --bg-preto: #000;
     --bg-cinza: #252525;
+    --estilo-por: "ryotruuser";
     --gradiente-primario: linear-gradient(182deg,rgba(51, 168, 219, 1) 0%, rgba(20, 114, 183, 1) 100%);
     --gradiente-secundario: linear-gradient(182deg,rgba(51, 168, 219, 1) 0%, rgba(21, 114, 183, 1) 100%);
     --gradiente-terciario: linear-gradient(183deg,rgba(0, 0, 0, 1) 0%, rgba(49, 168, 221, 1) 100%);
@@ -120,6 +121,10 @@ body{
                 border-radius: 57px;
                 border: 1px solid var(--cor-primaria);
                 cursor: pointer;
+                transition: .6s;
+                &:hover{
+                    background-color: rgba(51, 168, 219, 0.3);
+                }
                 .module-span{
                     color: var(--cor-primaria);
                 }
